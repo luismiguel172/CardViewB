@@ -18,11 +18,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            
-            <ImageView
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/pasta"/>
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pasta"
+                    android:scaleType="centerCrop"/>
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:navigationIcon="@drawable/baseline_share"
+                    />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
             
             <TextView
                 android:layout_width="wrap_content"
@@ -52,6 +65,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="O melhor macarrao da regiao"/>
+            
+            <Button
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:text="Ordene Agora"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
 
         </LinearLayout>
         
